@@ -21,6 +21,7 @@ export default defineNuxtConfig({
       }
     ],
     '@vueuse/nuxt',
-    '@nuxtjs/device'
+    '@nuxtjs/device',
+    '@nuxt/content'
   ]
 })

@@ -28,6 +28,7 @@ useHead({
   <div>
     <NuxtLayout :name="device.isMobile ? 'mobile':'default'">
       <WelcomeComponent />
+      <ContentDoc />
     </NuxtLayout>
   </div>
 </template>
