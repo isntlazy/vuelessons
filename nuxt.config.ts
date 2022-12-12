@@ -12,6 +12,7 @@ export default defineNuxtConfig({
   imports: {
     dirs: ['stores']
   },
+  css: ['@/assets/css/main.scss'],
   modules: [
     '@nuxtjs/tailwindcss',
     ['@pinia/nuxt',
