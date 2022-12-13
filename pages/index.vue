@@ -99,6 +99,162 @@ useHead({
         </div>
       </div>
       <hr class="my-8 w-full h-px bg-gray-200 border-0">
+      <div class="flex w-full flex-col mb-20">
+        <div class="flex flex-col">
+          <h2 class="text-3xl uppercase text-secondary font-extrabold mb-8">Веб-розробка</h2>
+          <div class="flex">
+            <div class="flex flex-col basis-1/4 pr-8">
+              <div class="bg-cover w-full rounded-t-lg h-44 bg-[url('https://images.unsplash.com/photo-1664575602276-acd073f104c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80')]" />
+              <div class="flex flex-col w-full">
+                <div class="flex justify-between mt-2 mb-1 text-xs">
+                  <div class="uppercase font-extrabold text-secondary">Веб-розробка</div>
+                  <span class="font-light text-primary">8 липня 2022</span>
+                </div>
+                <h3 class="text-xl font-bold mb-1 text-primary">Верстка сайту на Vue + Tailwind</h3>
+                <p class="text-sm text-primary">
+                  сьогодні я вирішив порізати з нуля проект з апворку використовуючи CSS фреймворк Tailwind, який досі не використовував комерційно
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col basis-1/4 pr-8">
+              <div class="bg-cover w-full rounded-t-lg h-44 bg-[url('https://images.unsplash.com/photo-1664575602276-acd073f104c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80')]" />
+              <div class="flex flex-col w-full">
+                <div class="flex justify-between mt-2 mb-1 text-xs">
+                  <div class="uppercase font-extrabold text-secondary">Веб-розробка</div>
+                  <span class="font-light text-primary">8 липня 2022</span>
+                </div>
+                <h3 class="text-xl font-bold mb-1 text-primary">Верстка сайту на Vue + Tailwind</h3>
+                <p class="text-sm text-primary">
+                  сьогодні я вирішив порізати з нуля проект з апворку використовуючи CSS фреймворк Tailwind, який досі не використовував комерційно
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col basis-1/4 pr-8">
+              <div class="bg-cover w-full rounded-t-lg h-44 bg-[url('https://images.unsplash.com/photo-1664575602276-acd073f104c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80')]" />
+              <div class="flex flex-col w-full">
+                <div class="flex justify-between mt-2 mb-1 text-xs">
+                  <div class="uppercase font-extrabold text-secondary">Веб-розробка</div>
+                  <span class="font-light text-primary">8 липня 2022</span>
+                </div>
+                <h3 class="text-xl font-bold mb-1 text-primary">Верстка сайту на Vue + Tailwind</h3>
+                <p class="text-sm text-primary">
+                  сьогодні я вирішив порізати з нуля проект з апворку використовуючи CSS фреймворк Tailwind, який досі не використовував комерційно
+                </p>
+              </div>
+            </div>
+            <div class="flex basis-1/4 justify-center items-center text-primary uppercase font-bold text-base">
+              <div class="flex flex-col items-center">
+                <span class="mb-1">Переглянути усі</span>
+                <img class="w-1/3" src="../assets/img/arrow-right.svg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex w-full flex-col mb-20">
+        <div class="flex flex-col">
+          <h2 class="text-3xl uppercase text-secondary font-extrabold mb-8">Продуктивність</h2>
+          <div class="flex">
+            <div class="flex flex-col basis-1/4 pr-8">
+              <div class="bg-cover w-full rounded-t-lg h-44 bg-[url('https://images.unsplash.com/photo-1664575602276-acd073f104c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80')]" />
+              <div class="flex flex-col w-full">
+                <div class="flex justify-between mt-2 mb-1 text-xs">
+                  <div class="uppercase font-extrabold text-secondary">Веб-розробка</div>
+                  <span class="font-light text-primary">8 липня 2022</span>
+                </div>
+                <h3 class="text-xl font-bold mb-1 text-primary">Верстка сайту на Vue + Tailwind</h3>
+                <p class="text-sm text-primary">
+                  сьогодні я вирішив порізати з нуля проект з апворку використовуючи CSS фреймворк Tailwind, який досі не використовував комерційно
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col basis-1/4 pr-8">
+              <div class="bg-cover w-full rounded-t-lg h-44 bg-[url('https://images.unsplash.com/photo-1664575602276-acd073f104c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80')]" />
+              <div class="flex flex-col w-full">
+                <div class="flex justify-between mt-2 mb-1 text-xs">
+                  <div class="uppercase font-extrabold text-secondary">Веб-розробка</div>
+                  <span class="font-light text-primary">8 липня 2022</span>
+                </div>
+                <h3 class="text-xl font-bold mb-1 text-primary">Верстка сайту на Vue + Tailwind</h3>
+                <p class="text-sm text-primary">
+                  сьогодні я вирішив порізати з нуля проект з апворку використовуючи CSS фреймворк Tailwind, який досі не використовував комерційно
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col basis-1/4 pr-8">
+              <div class="bg-cover w-full rounded-t-lg h-44 bg-[url('https://images.unsplash.com/photo-1664575602276-acd073f104c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80')]" />
+              <div class="flex flex-col w-full">
+                <div class="flex justify-between mt-2 mb-1 text-xs">
+                  <div class="uppercase font-extrabold text-secondary">Веб-розробка</div>
+                  <span class="font-light text-primary">8 липня 2022</span>
+                </div>
+                <h3 class="text-xl font-bold mb-1 text-primary">Верстка сайту на Vue + Tailwind</h3>
+                <p class="text-sm text-primary">
+                  сьогодні я вирішив порізати з нуля проект з апворку використовуючи CSS фреймворк Tailwind, який досі не використовував комерційно
+                </p>
+              </div>
+            </div>
+            <div class="flex basis-1/4 justify-center items-center text-primary uppercase font-bold text-base">
+              <div class="flex flex-col items-center">
+                <span class="mb-1">Переглянути усі</span>
+                <img class="w-1/3" src="../assets/img/arrow-right.svg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex w-full flex-col mb-20">
+        <div class="flex flex-col">
+          <h2 class="text-3xl uppercase text-secondary font-extrabold mb-8">Гаджети</h2>
+          <div class="flex">
+            <div class="flex flex-col basis-1/4 pr-8">
+              <div class="bg-cover w-full rounded-t-lg h-44 bg-[url('https://images.unsplash.com/photo-1664575602276-acd073f104c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80')]" />
+              <div class="flex flex-col w-full">
+                <div class="flex justify-between mt-2 mb-1 text-xs">
+                  <div class="uppercase font-extrabold text-secondary">Веб-розробка</div>
+                  <span class="font-light text-primary">8 липня 2022</span>
+                </div>
+                <h3 class="text-xl font-bold mb-1 text-primary">Верстка сайту на Vue + Tailwind</h3>
+                <p class="text-sm text-primary">
+                  сьогодні я вирішив порізати з нуля проект з апворку використовуючи CSS фреймворк Tailwind, який досі не використовував комерційно
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col basis-1/4 pr-8">
+              <div class="bg-cover w-full rounded-t-lg h-44 bg-[url('https://images.unsplash.com/photo-1664575602276-acd073f104c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80')]" />
+              <div class="flex flex-col w-full">
+                <div class="flex justify-between mt-2 mb-1 text-xs">
+                  <div class="uppercase font-extrabold text-secondary">Веб-розробка</div>
+                  <span class="font-light text-primary">8 липня 2022</span>
+                </div>
+                <h3 class="text-xl font-bold mb-1 text-primary">Верстка сайту на Vue + Tailwind</h3>
+                <p class="text-sm text-primary">
+                  сьогодні я вирішив порізати з нуля проект з апворку використовуючи CSS фреймворк Tailwind, який досі не використовував комерційно
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col basis-1/4 pr-8">
+              <div class="bg-cover w-full rounded-t-lg h-44 bg-[url('https://images.unsplash.com/photo-1664575602276-acd073f104c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80')]" />
+              <div class="flex flex-col w-full">
+                <div class="flex justify-between mt-2 mb-1 text-xs">
+                  <div class="uppercase font-extrabold text-secondary">Веб-розробка</div>
+                  <span class="font-light text-primary">8 липня 2022</span>
+                </div>
+                <h3 class="text-xl font-bold mb-1 text-primary">Верстка сайту на Vue + Tailwind</h3>
+                <p class="text-sm text-primary">
+                  сьогодні я вирішив порізати з нуля проект з апворку використовуючи CSS фреймворк Tailwind, який досі не використовував комерційно
+                </p>
+              </div>
+            </div>
+            <div class="flex basis-1/4 justify-center items-center text-primary uppercase font-bold text-base">
+              <div class="flex flex-col items-center">
+                <span class="mb-1">Переглянути усі</span>
+                <img class="w-1/3" src="../assets/img/arrow-right.svg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <ContentDoc v-if="false" />
     </NuxtLayout>
   </div>

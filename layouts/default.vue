@@ -9,5 +9,6 @@
     <div class="container flex flex-col items-center justify-between mx-auto mt-8">
       <slot />
     </div>
+    <TheFooter />
   </div>
 </template>
