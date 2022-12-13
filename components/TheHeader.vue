@@ -35,8 +35,10 @@ const menuItems = [
         </button>
         <div class="hidden w-full md:block md:w-auto">
           <ul class="flex flex-col px-4 pt-2 md:flex-row md:space-x-12 md:mt-0 md:text-xs md:font-semibold tracking-wider md:border-0 uppercase">
-            <li v-for="menuItem in menuItems" :key="menuItem.label" class="cursor-pointer pb-2 px-2 border-b-2 border-primary hover:border-b-2 hover:border-amber-600">
-              <NuxtLink :to="menuItem.path" class="block pt-2 pr-4 text-white md:bg-transparent md:p-0" aria-current="page">{{ menuItem.label }}</NuxtLink>
+            <li v-for="menuItem in menuItems" :key="menuItem.label" class="cursor-pointer pb-2 px-2 border-b-2 border-primary hover:border-b-2 hover:border-orange-600">
+              <NuxtLink :to="menuItem.path" class="block pt-2 pr-4 text-white md:bg-transparent md:p-0" aria-current="page">
+                {{ menuItem.label }}
+              </NuxtLink>
             </li>
           </ul>
         </div>
@@ -47,6 +49,6 @@ const menuItems = [
 
 <style lang="scss" scoped>
 li:has(> a.router-link-active) {
-  @apply border-b-2 border-amber-600;
+  @apply border-b-2 border-orange-600;
 }
 </style>

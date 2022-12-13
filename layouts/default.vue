@@ -6,6 +6,8 @@
         🎁 Банер на десктопі про якусь важливу новину або новий доданий курс!
       </span>
     </div>
-    <slot />
+    <div class="container flex flex-col items-center justify-between mx-auto mt-8">
+      <slot />
+    </div>
   </div>
 </template>

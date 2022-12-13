@@ -6,7 +6,8 @@ export default <Partial<Config>>{
     extend: {
       colors: {
         // primary: defaultTheme.colors.green
-        primary: '#1A2238'
+        primary: '#1A2238',
+        secondary: '#40B883'
       },
       transitionProperty: {
         flow: 'background-position'
