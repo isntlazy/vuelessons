@@ -8,4 +8,18 @@ h1 {
   font-size: 1.875rem; /* 30px */
   line-height: 2.25rem; /* 36px */
   font-weight: 700;
+  color: #1A2238;
+  margin-bottom: 1rem;
+}
+
+.content {
+  p {
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+  }
+  pre {
+    background-color: #1a2238;
+    padding: 20px;
+    border-radius: 8px;
+  }
 }

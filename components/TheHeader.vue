@@ -12,10 +12,10 @@ const menuItems = [
     label: 'Продуктивність',
     path: '/productivity'
   },
-  {
-    label: 'Гаджети',
-    path: '/gadgets'
-  },
+  // {
+  //   label: 'Гаджети',
+  //   path: '/gadgets'
+  // },
   {
     label: 'Контакти',
     path: '/contacts'

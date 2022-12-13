@@ -13,6 +13,13 @@ export default defineNuxtConfig({
     dirs: ['stores']
   },
   css: ['@/assets/css/main.scss'],
+  content: {
+    highlight: {
+      // Theme used in all color schemes.
+      theme: 'one-dark-pro',
+      preload: ['diff', 'ts', 'js', 'css', 'sql', 'xml', 'json']
+    }
+  },
   modules: [
     '@nuxtjs/tailwindcss',
     ['@pinia/nuxt',
