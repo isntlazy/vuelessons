@@ -1,5 +1,7 @@
 ---
 tags: '#javascript #vuejs'
+datePublished: '2022-11-03'
+datePublishedFormatted: '3 березня 2022'
 ---
 
 # Примітивні типи даних у Javascript

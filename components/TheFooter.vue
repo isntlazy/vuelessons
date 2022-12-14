@@ -1,5 +1,5 @@
 <template>
-  <footer class="py-16 px-32 bg-primary sm:py-16 mt-20">
+  <footer class="py-16 px-32 bg-primary sm:py-16 lg:mt-20">
     <div class="md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
         <a href="/" class="flex items-center">

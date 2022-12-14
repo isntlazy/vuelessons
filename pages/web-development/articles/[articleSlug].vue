@@ -5,6 +5,8 @@ definePageMeta({
   layout: false
 })
 
+// todo handle 404 here
+
 </script>
 <template>
   <div>
