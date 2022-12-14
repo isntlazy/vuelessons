@@ -6,7 +6,7 @@
           <img src="../assets/img/logo.svg" class="h-16 mr-3 sm:h-14" alt="Rankova Kava Logo">
         </a>
       </div>
-      <div class="grid grid-cols-2 gap-10 sm:gap-24 sm:grid-cols-2">
+      <div class="grid grid-cols-2 gap-10 sm:gap-24 sm:grid-cols-2 max-w-screen-xl">
         <div>
           <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
             Веб-розробка
