@@ -6,17 +6,17 @@
           <img src="../assets/img/logo.svg" class="h-16 mr-3 sm:h-14" alt="Rankova Kava Logo">
         </a>
       </div>
-      <div class="grid grid-cols-2 gap-10 sm:gap-6 sm:grid-cols-4">
+      <div class="grid grid-cols-2 gap-10 sm:gap-24 sm:grid-cols-2">
         <div>
           <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
             Веб-розробка
           </h2>
-          <ul class="text-gray-600 dark:text-gray-400">
+          <ul class="text-gray-400">
             <li class="mb-4">
-              <a href="https://flowbite.com/" class="hover:underline">Javascript</a>
+              <a href="https://flowbite.com/" class="hover:underline">JavaScript</a>
             </li>
-            <li>
-              <a href="https://tailwindcss.com/" class="hover:underline">Typescript</a>
+            <li class="mb-4">
+              <a href="https://tailwindcss.com/" class="hover:underline">TypeScript</a>
             </li>
             <li>
               <a href="https://tailwindcss.com/" class="hover:underline">Vue.js</a>
@@ -25,42 +25,8 @@
         </div>
         <div>
           <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-            Продуктивність
-          </h2>
-          <ul class="text-gray-600 dark:text-gray-400">
-            <li class="mb-4">
-              <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
-            </li>
-            <li>
-              <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-            Гаджети
-          </h2>
-          <ul class="text-gray-600 dark:text-gray-400">
-            <li class="mb-4">
-              <a href="#" class="hover:underline">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline">Terms &amp; Conditions</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
             Контакти
           </h2>
-          <ul class="text-gray-600 dark:text-gray-400">
-            <li class="mb-4">
-              <a href="#" class="hover:underline">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline">Terms &amp; Conditions</a>
-            </li>
-          </ul>
         </div>
       </div>
     </div>

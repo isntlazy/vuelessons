@@ -37,38 +37,18 @@ definePageMeta({
         <div class="flex flex-col">
           <h2 class="text-3xl uppercase text-secondary font-extrabold mb-8">Веб-розробка</h2>
           <div class="flex">
-            <div class="flex flex-col basis-1/4 pr-8">
-              <ArticleCard />
-            </div>
-            <div class="flex flex-col basis-1/4 pr-8">
-              <ArticleCard />
-            </div>
-            <div class="flex flex-col basis-1/4 pr-8">
-              <ArticleCard />
-            </div>
-            <div class="flex basis-1/4 justify-center items-center text-primary uppercase font-bold text-base">
-              <div class="flex flex-col items-center">
-                <span class="mb-1">Переглянути усі</span>
-                <img class="w-1/3" src="../assets/img/arrow-right.svg">
+            <div class="flex flex-row basis-10/12">
+              <div class="flex flex-col basis-1/3 pr-8">
+                <ArticleCard />
+              </div>
+              <div class="flex flex-col basis-1/3 pr-8">
+                <ArticleCard />
+              </div>
+              <div class="flex flex-col basis-1/3 pr-8">
+                <ArticleCard />
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="flex w-full flex-col mb-20">
-        <div class="flex flex-col">
-          <h2 class="text-3xl uppercase text-secondary font-extrabold mb-8">Продуктивність</h2>
-          <div class="flex">
-            <div class="flex flex-col basis-1/4 pr-8">
-              <ArticleCard />
-            </div>
-            <div class="flex flex-col basis-1/4 pr-8">
-              <ArticleCard />
-            </div>
-            <div class="flex flex-col basis-1/4 pr-8">
-              <ArticleCard />
-            </div>
-            <div class="flex basis-1/4 justify-center items-center text-primary uppercase font-bold text-base">
+            <div class="flex basis-2/12 justify-center items-center text-primary uppercase font-bold text-base">
               <div class="flex flex-col items-center">
                 <span class="mb-1">Переглянути усі</span>
                 <img class="w-1/3" src="../assets/img/arrow-right.svg">

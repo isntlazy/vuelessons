@@ -8,10 +8,10 @@ const menuItems = [
     label: 'Веб-розробка',
     path: '/web-development'
   },
-  {
-    label: 'Продуктивність',
-    path: '/productivity'
-  },
+  // {
+  //   label: 'Продуктивність',
+  //   path: '/productivity'
+  // },
   // {
   //   label: 'Гаджети',
   //   path: '/gadgets'
@@ -25,7 +25,7 @@ const menuItems = [
 <template>
   <header>
     <nav class="bg-primary border-gray-200 px-2 sm:px-4 py-6">
-      <div class="container flex flex-wrap items-center justify-between mx-auto">
+      <div class="container max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
         <a href="/" class="flex items-center -mt-4">
           <img src="../assets/img/logo.svg" class="h-6 mr-3 sm:h-16" alt="Rankova Kava Logo">
         </a>
