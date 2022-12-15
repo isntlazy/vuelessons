@@ -8,7 +8,7 @@
     <ContentDoc />
     <div class="flex flex-col mt-16">
       <div class="flex flex-wrap justify-between">
-        <NuxtLink class="basis-1/2" to="/web-development/javascript">
+        <NuxtLink class="basis-1/2" to="/web-development/JavaScript">
           <div class=" cursor-pointer transform duration-500 hover:shadow-md hover:-translate-y-1 flex flex-wrap md:flex-nowrap  w-full ">
             <img class="w-full md:w-40 h-auto" src="../../assets/img/javascript.png" alt="">
             <div class="p-10 my-auto">
@@ -21,7 +21,7 @@
             </div>
           </div>
         </NuxtLink>
-        <NuxtLink class="basis-1/2" to="/web-development/typescript">
+        <NuxtLink class="basis-1/2" to="/web-development/TypeScript">
           <div class="cursor-pointer transform duration-500 hover:shadow-md hover:-translate-y-1 flex flex-wrap md:flex-nowrap w-full ">
             <img class="w-full md:w-40 h-auto" src="../../assets/img/typescript.png" alt="">
             <div class="p-10 my-auto">
@@ -34,7 +34,7 @@
             </div>
           </div>
         </NuxtLink>
-        <NuxtLink class="basis-1/2" to="/web-development/vuejs">
+        <NuxtLink class="basis-1/2" to="/web-development/VueJS">
           <div class="cursor-pointer transform duration-500 hover:shadow-md hover:-translate-y-1 flex flex-wrap md:flex-nowrap w-full ">
             <img class="w-full md:w-40 h-auto" src="../../assets/img/vue.png" alt="">
             <div class="p-10 my-auto">

@@ -1,5 +1,5 @@
 ---
-tags: '#vuejs #pinia'
+tags: '#VueJS #Pinia'
 category: 'Веб-розробка'
 datePublished: '2022-11-03'
 datePublishedFormatted: '3 березня 2022'

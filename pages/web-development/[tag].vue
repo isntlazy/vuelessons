@@ -8,7 +8,8 @@ if (!articles.length) {
 </script>
 
 <template>
-  <span>tag: {{ route.params.tag }}</span>
+  <h1>{{ route.params.tag }}</h1>
+  <span>tag: </span>
   <h1>some tag here</h1>
   {{ articles }}
 </template>
