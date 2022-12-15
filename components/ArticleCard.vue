@@ -1,12 +1,26 @@
 <script setup lang="ts">
 export interface Props {
-  isMain?: boolean
+  isMain?: boolean,
+  datePublished?: string,
+  title: string,
+  content? :string,
+  category?: string
 }
-withDefaults(
+const props = withDefaults(
   defineProps<Props>(), {
-    isMain: false
+    isMain: false,
+    datePublished: '',
+    title: '',
+    content: '',
+    category: ''
   }
 )
+
+const contentPreviewMaxLength = 140
+
+const slicedContent = computed(() => {
+  return props.content.length ? `${props.content.substring(0, props.isMain ? contentPreviewMaxLength * 4 : contentPreviewMaxLength)}...` : ''
+})
 </script>
 
 <template>
@@ -14,15 +28,15 @@ withDefaults(
   <div class="flex flex-col w-full">
     <div :class="isMain ? 'mt-4 mb-2 text-sm' : 'mt-2 mb-1 text-xs'" class="flex justify-between">
       <div class="uppercase font-extrabold text-secondary">
-        Веб-розробка
+        {{ category }}
       </div>
-      <span class="font-light text-primary">8 липня 2022</span>
+      <span class="font-light text-primary">{{ datePublished }}</span>
     </div>
     <h3 :class="isMain ? 'text-2xl mb-2' : 'text-xl mb-1'" class="font-bold text-primary">
-      Верстка сайту на Vue + Tailwind
+      {{ title }}
     </h3>
     <p :class="isMain ? 'text-base': 'text-sm'" class="text-primary">
-      сьогодні я вирішив порізати з нуля проект з апворку використовуючи CSS фреймворк Tailwind, який досі не використовував комерційно
+      {{ slicedContent }}
     </p>
   </div>
 </template>
