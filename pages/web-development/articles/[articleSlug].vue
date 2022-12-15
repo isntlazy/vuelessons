@@ -5,7 +5,7 @@ definePageMeta({
   layout: false
 })
 
-const articles = await queryContent('').where({ _path: `/articles/web-development/${route.params.articleSlug}` }).find()
+const articles = await queryContent('web-development', 'articles').where({ _path: `/web-development/articles/${route.params.articleSlug}` }).find()
 // checking if this article exists
 if (!articles.length) {
   throw createError({ statusCode: 404, statusMessage: 'Page Not Found', fatal: true })
@@ -17,7 +17,8 @@ if (!articles.length) {
       <div class="flex w-full flex-row">
         <div class="basis-3/4 flex flex-col pr-16 content">
           <div class="bg-cover mb-6 h-72 w-full rounded-t-lg bg-[url('https://images.unsplash.com/photo-1664575602276-acd073f104c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80')]" />
-          <ContentDoc :path="'articles/web-development/'+route.params.articleSlug" />
+<!--          <ContentDoc :path="'articles/web-development/'+route.params.articleSlug" />-->
+          <ContentDoc />
         </div>
         <div class="basis-1/4 flex flex-col">
           <ArticleCard />

@@ -2,13 +2,10 @@
 </script>
 <template>
   <div class="flex flex-col">
-    <h1 class="text-3xl uppercase text-secondary font-extrabold mb-4">
-      Веб-розробка
-    </h1>
     <ContentDoc />
     <div class="flex flex-col mt-16">
       <div class="flex flex-wrap justify-between">
-        <NuxtLink class="basis-1/2" to="/web-development/JavaScript">
+        <NuxtLink class="basis-1/2" to="/web-development/javascript">
           <div class=" cursor-pointer transform duration-500 hover:shadow-md hover:-translate-y-1 flex flex-wrap md:flex-nowrap  w-full ">
             <img class="w-full md:w-40 h-auto" src="../../assets/img/javascript.png" alt="">
             <div class="p-10 my-auto">
@@ -21,7 +18,7 @@
             </div>
           </div>
         </NuxtLink>
-        <NuxtLink class="basis-1/2" to="/web-development/TypeScript">
+        <NuxtLink class="basis-1/2" to="/web-development/typescript">
           <div class="cursor-pointer transform duration-500 hover:shadow-md hover:-translate-y-1 flex flex-wrap md:flex-nowrap w-full ">
             <img class="w-full md:w-40 h-auto" src="../../assets/img/typescript.png" alt="">
             <div class="p-10 my-auto">
@@ -34,7 +31,7 @@
             </div>
           </div>
         </NuxtLink>
-        <NuxtLink class="basis-1/2" to="/web-development/VueJS">
+        <NuxtLink class="basis-1/2" to="/web-development/vuejs">
           <div class="cursor-pointer transform duration-500 hover:shadow-md hover:-translate-y-1 flex flex-wrap md:flex-nowrap w-full ">
             <img class="w-full md:w-40 h-auto" src="../../assets/img/vue.png" alt="">
             <div class="p-10 my-auto">

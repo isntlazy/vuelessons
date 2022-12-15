@@ -6,7 +6,7 @@ const device = useDevice()
 const numberOfLastArticles = { desktop: 5, mobile: 3 }
 
 const lastArticles = ref<any>([])
-lastArticles.value = await queryContent('articles')
+lastArticles.value = await queryContent('')
   .limit(device.isMobile ? numberOfLastArticles.mobile : numberOfLastArticles.desktop)
   .find()
 
@@ -16,7 +16,7 @@ const lastArticlesWithoutFirstOne = computed(() => {
   return arrWithoutFirstArticle
 })
 
-const lastWebDevelopmentArticles = await queryContent('articles', 'web-development')
+const lastWebDevelopmentArticles = await queryContent('web-development', 'articles')
   .limit(3)
   .find()
 </script>
@@ -33,6 +33,7 @@ const lastWebDevelopmentArticles = await queryContent('articles', 'web-developme
               :date-published="lastArticles[0].datePublishedFormatted"
               :category="lastArticles[0].category"
               :is-main="!device.isMobile"
+              :path="lastArticles[0]._path"
             />
           </div>
           <div class="lg:basis-3/5 basis-full rounded-lg flex flex-col items-center lg:pl-8">
@@ -43,6 +44,7 @@ const lastWebDevelopmentArticles = await queryContent('articles', 'web-developme
                   :content="article.description"
                   :date-published="article.datePublishedFormatted"
                   :category="article.category"
+                  :path="article._path"
                 />
               </div>
             </div>
@@ -62,14 +64,17 @@ const lastWebDevelopmentArticles = await queryContent('articles', 'web-developme
                     :content="article.description"
                     :date-published="article.datePublishedFormatted"
                     :category="article.category"
+                    :path="article._path"
                   />
                 </div>
               </div>
               <div class="flex basis-full pt-12 lg:pt-0 lg:basis-2/12 justify-center items-center text-primary uppercase font-bold text-base">
-                <div class="flex flex-col items-center">
-                  <span class="mb-1">Переглянути усі</span>
-                  <img class="w-1/3" src="../assets/img/arrow-right.svg">
-                </div>
+                <NuxtLink to="/web-development">
+                  <div class="flex flex-col items-center">
+                    <span class="mb-1">Переглянути усі</span>
+                    <img class="w-1/3" src="../assets/img/arrow-right.svg" alt="Стрілка подивитись усі">
+                  </div>
+                </NuxtLink>
               </div>
             </div>
           </div>
