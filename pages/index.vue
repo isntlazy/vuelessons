@@ -6,7 +6,7 @@ const device = useDevice()
 const numberOfLastArticles = { desktop: 5, mobile: 3 }
 
 const lastArticles = ref<any>([])
-lastArticles.value = await queryContent('')
+lastArticles.value = await queryContent('').where({ category: { $containsAny: ['Веб-розробка', 'Продуктивність'] } })
   .limit(device.isMobile ? numberOfLastArticles.mobile : numberOfLastArticles.desktop)
   .find()
 
@@ -17,6 +17,7 @@ const lastArticlesWithoutFirstOne = computed(() => {
 })
 
 const lastWebDevelopmentArticles = await queryContent('web-development', 'articles')
+  .where({ category: { $containsAny: ['Веб-розробка', 'Продуктивність'] } })
   .limit(3)
   .find()
 </script>
@@ -69,9 +70,9 @@ const lastWebDevelopmentArticles = await queryContent('web-development', 'articl
                 </div>
               </div>
               <div class="flex basis-full pt-12 lg:pt-0 lg:basis-2/12 justify-center items-center text-primary uppercase font-bold text-base">
-                <NuxtLink to="/web-development">
+                <NuxtLink to="/web-development/articles">
                   <div class="flex flex-col items-center">
-                    <span class="mb-1">Переглянути усі</span>
+                    <span class="mb-1 text-center">Переглянути усі</span>
                     <img class="w-1/3" src="../assets/img/arrow-right.svg" alt="Стрілка подивитись усі">
                   </div>
                 </NuxtLink>
