@@ -16,7 +16,7 @@ if (!articles.length) {
 }
 
 const otherArticles = await queryContent('web-development', 'articles')
-  .where({ _path: { $ne: `/web-development/articles/${route.params.articleSlug}` } })
+  .where({ _path: { $ne: `/web-development/articles/${route.params.articleSlug}` }, category: { $eq: 'Веб-розробка' } })
   .limit(NUMBER_OF_OTHER_ARTICLES)
   .find()
 
@@ -24,7 +24,7 @@ const otherArticles = await queryContent('web-development', 'articles')
 <template>
   <div>
     <NuxtLayout :name="device.isMobile ? 'mobile':'default'">
-      <nav class="flex mb-4" aria-label="Breadcrumb">
+      <nav class="flex mb-8" aria-label="Breadcrumb">
         <ol class="inline-flex items-center space-x-1 md:space-x-3">
           <li class="inline-flex items-center">
             <a href="/" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-primary hover:underline">
