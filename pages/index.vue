@@ -1,7 +1,4 @@
 <script lang="ts" setup>
-definePageMeta({
-  layout: false
-})
 const device = useDevice()
 const numberOfLastArticles = { desktop: 5, mobile: 3 }
 
@@ -24,22 +21,41 @@ const lastWebDevelopmentArticles = await queryContent('web-development', 'articl
 
 <template>
   <div>
-    <NuxtLayout name="default">
-      <div class="px-3 md:px-6 xl:px-0">
-        <div class="flex w-full flex-row flex-wrap lg:px-0">
-          <div class="lg:basis-2/5 basis-full flex flex-col">
-            <ArticleCard
-              :title="lastArticles[0].title"
-              :content="lastArticles[0].description"
-              :date-published="lastArticles[0].datePublishedFormatted"
-              :category="lastArticles[0].category"
-              :is-main="!device.isMobile"
-              :path="lastArticles[0]._path"
-            />
+    <div class="px-3 md:px-6 xl:px-0">
+      <div class="flex w-full flex-row flex-wrap lg:px-0">
+        <div class="lg:basis-2/5 basis-full flex flex-col">
+          <ArticleCard
+            :title="lastArticles[0].title"
+            :content="lastArticles[0].description"
+            :date-published="lastArticles[0].datePublishedFormatted"
+            :category="lastArticles[0].category"
+            :is-main="!device.isMobile"
+            :path="lastArticles[0]._path"
+          />
+        </div>
+        <div class="lg:basis-3/5 basis-full rounded-lg flex flex-col items-center lg:pl-8">
+          <div class="flex flex-wrap w-full">
+            <div v-for="article in lastArticlesWithoutFirstOne" :key="article.title" class="flex flex-col basis-full lg:basis-1/2 mb-0 pt-6 lg:mb-6 lg:pt-0 lg:pl-4">
+              <ArticleCard
+                :title="article.title"
+                :content="article.description"
+                :date-published="article.datePublishedFormatted"
+                :category="article.category"
+                :path="article._path"
+              />
+            </div>
           </div>
-          <div class="lg:basis-3/5 basis-full rounded-lg flex flex-col items-center lg:pl-8">
-            <div class="flex flex-wrap w-full">
-              <div v-for="article in lastArticlesWithoutFirstOne" :key="article.title" class="flex flex-col basis-full lg:basis-1/2 mb-0 pt-6 lg:mb-6 lg:pt-0 lg:pl-4">
+        </div>
+      </div>
+      <hr class="my-8 w-full h-px bg-gray-200 border-0">
+      <div class="flex w-full flex-col mb-20">
+        <div class="flex flex-col">
+          <h2 class="text-2xl uppercase text-secondary font-extrabold lg:mb-6">
+            Веб-розробка
+          </h2>
+          <div class="flex flex-wrap">
+            <div class="flex flex-row flex-wrap flex basis-full lg:basis-10/12">
+              <div v-for="article in lastWebDevelopmentArticles" :key="article.title" class="flex flex-col basis-full lg:basis-1/3 lg:pr-8 mt-6 lg:mt-0">
                 <ArticleCard
                   :title="article.title"
                   :content="article.description"
@@ -49,39 +65,18 @@ const lastWebDevelopmentArticles = await queryContent('web-development', 'articl
                 />
               </div>
             </div>
-          </div>
-        </div>
-        <hr class="my-8 w-full h-px bg-gray-200 border-0">
-        <div class="flex w-full flex-col mb-20">
-          <div class="flex flex-col">
-            <h2 class="text-2xl uppercase text-secondary font-extrabold lg:mb-6">
-              Веб-розробка
-            </h2>
-            <div class="flex flex-wrap">
-              <div class="flex flex-row flex-wrap flex basis-full lg:basis-10/12">
-                <div v-for="article in lastWebDevelopmentArticles" :key="article.title" class="flex flex-col basis-full lg:basis-1/3 lg:pr-8 mt-6 lg:mt-0">
-                  <ArticleCard
-                    :title="article.title"
-                    :content="article.description"
-                    :date-published="article.datePublishedFormatted"
-                    :category="article.category"
-                    :path="article._path"
-                  />
+            <div class="flex basis-full pt-12 lg:pt-0 lg:basis-2/12 justify-center items-center text-primary uppercase font-bold text-base">
+              <NuxtLink to="/web-development/articles">
+                <div class="flex flex-col items-center">
+                  <span class="mb-1 text-center">Переглянути усі</span>
+                  <img class="w-1/3" src="../assets/img/arrow-right.svg" alt="Стрілка подивитись усі">
                 </div>
-              </div>
-              <div class="flex basis-full pt-12 lg:pt-0 lg:basis-2/12 justify-center items-center text-primary uppercase font-bold text-base">
-                <NuxtLink to="/web-development/articles">
-                  <div class="flex flex-col items-center">
-                    <span class="mb-1 text-center">Переглянути усі</span>
-                    <img class="w-1/3" src="../assets/img/arrow-right.svg" alt="Стрілка подивитись усі">
-                  </div>
-                </NuxtLink>
-              </div>
+              </NuxtLink>
             </div>
           </div>
         </div>
       </div>
-      <ContentDoc v-if="false" />
-    </NuxtLayout>
+    </div>
+    <ContentDoc v-if="false" />
   </div>
 </template>
