@@ -1,2 +1,3 @@
-<h1 id="vuejs" class="text-3xl text-secondary uppercase font-extrabold"> Vue.JS</h1>
+<h1 id="vuejs" class="text-2xl text-secondary uppercase font-extrabold"> Vue.JS</h1>
+
 Перші кроки щодо вивчення веб-розробки рекомендується починати з освоєння основ HTML. Знаючи його, ви зможете працювати з інтерфейсами користувача. Також буде видно перші результати написання коду. Неможливо освоїти розробку веб-сайтів, не знаючи HTML.

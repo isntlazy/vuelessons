@@ -54,12 +54,12 @@ const lastWebDevelopmentArticles = await queryContent('web-development', 'articl
         <hr class="my-8 w-full h-px bg-gray-200 border-0">
         <div class="flex w-full flex-col mb-20">
           <div class="flex flex-col">
-            <h2 class="text-3xl uppercase text-secondary font-extrabold mb-8">
+            <h2 class="text-2xl uppercase text-secondary font-extrabold lg:mb-6">
               Веб-розробка
             </h2>
             <div class="flex flex-wrap">
               <div class="flex flex-row flex-wrap flex basis-full lg:basis-10/12">
-                <div v-for="article in lastWebDevelopmentArticles" :key="article.title" class="flex flex-col basis-full lg:basis-1/3 lg:pr-8">
+                <div v-for="article in lastWebDevelopmentArticles" :key="article.title" class="flex flex-col basis-full lg:basis-1/3 lg:pr-8 mt-6 lg:mt-0">
                   <ArticleCard
                     :title="article.title"
                     :content="article.description"

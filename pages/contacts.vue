@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col">
+  <div class="flex flex-col mx-3 lg:mx-0">
     <nav class="flex mb-4" aria-label="Breadcrumb">
       <ol class="inline-flex items-center space-x-1 md:space-x-3">
         <li class="inline-flex items-center">
@@ -16,17 +16,15 @@
         </li>
       </ol>
     </nav>
-    <h1 class="text-3xl uppercase text-secondary font-extrabold mb-4">
+    <h1 class="text-2xl uppercase text-secondary font-extrabold mb-4">
       Контакти
     </h1>
-    <div class="flex mt-12">
-      <div class="basis-1/4">
-        <img class="h-72" src="../assets/img/author.png">
-      </div>
-      <div class="basis-3/4">
-        <h2 class="text-primary text-3xl font-bold">Привіт!</h2>
-        <h2 class="text-xl text-primary mt-3">мене звати Олег Корнійчук, я засновник блогу Ранкова Кава</h2>
+    <div class="flex mt-2 mb-8">
+      <div class="basis-full">
+        <h2 class="text-xl text-primary mt-3 font-semibold">Раді вітати вас на блозі Ранкова Кава</h2>
         <p class="mt-6">Навряд чи ми можемо уявити сучасну веб-розробку без допомоги інструментів інтерфейсу командного рядка (CLI від англ. Command-Line Interface). Вони надзвичайно полегшують та прискорюють процес розробки, зменшуючи кількість повторюваних та нудних завдань. Встановлення проекту вручну, з усіма функціями відстеження, створення, тестування, попередньої обробки, оптимізації та відповідних опцій відстеження, не звучить захоплююче, чи не так?</p>
+        <p class="mt-6">сьогодні я вирішив порізати з нуля проект з апворку використовуючи CSS фреймворк Tailwind, який досі не використовував комерційно</p>
+        <p class="mt-6">сьогодні я вирішив порізати з нуля проект з апворку використовуючи CSS фреймворк Tailwind, який досі не використовував комерційно</p>
         <p class="mt-6">сьогодні я вирішив порізати з нуля проект з апворку використовуючи CSS фреймворк Tailwind, який досі не використовував комерційно</p>
         <h2 class="text-primary text-xl font-bold mt-4">написати:</h2>
         <div class="flex mt-4">

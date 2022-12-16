@@ -25,7 +25,7 @@ useHead({
         🎁 Банер на десктопі про якусь важливу новину або новий доданий курс!
       </span>
     </div>
-    <div class="container max-w-screen-xl flex flex-col justify-between mx-auto mt-8">
+    <div class="container max-w-screen-xl flex flex-col justify-between mx-auto mt-4 lg:mt-8">
       <slot />
     </div>
     <TheFooter />
