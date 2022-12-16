@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col mx-3 lg:mx-0">
+  <div class="flex flex-col px-3 md:px-6 xl:px-0">
     <nav class="flex mb-4" aria-label="Breadcrumb">
       <ol class="inline-flex items-center space-x-1 md:space-x-3">
         <li class="inline-flex items-center">

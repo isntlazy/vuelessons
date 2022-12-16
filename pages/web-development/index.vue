@@ -1,7 +1,7 @@
 <script setup>
 </script>
 <template>
-  <div class="mx-3 lg:mx-0">
+  <div class="px-3 md:px-6 xl:px-0">
     <div class="flex flex-col">
       <nav class="flex mb-6" aria-label="Breadcrumb">
         <ol class="inline-flex items-center space-x-1 md:space-x-3">
@@ -21,63 +21,63 @@
       </nav>
 
       <ContentDoc />
-      <div class="flex flex-wrap justify-center mt-8">
-        <div class="flex flex-col mt-6">
-          <div class="flex flex-wrap justify-between">
-            <NuxtLink class="basis-1/2" to="/web-development/articles">
-              <div class=" cursor-pointer transform duration-500 hover:shadow-md hover:-translate-y-1 flex  w-full ">
-                <img class="lg:w-40 h-auto" src="../../assets/img/articles.png" alt="">
-                <div class="p-10 my-auto">
-                  <h2 class="text-2xl font-bold text-primary">
-                    Усі статті з Веб-розробки
-                  </h2>
-                  <p class="text-base text-gray-400 mt-2">
-                    Переглянути усі статті з розділу: Веб-розробка
-                  </p>
-                </div>
-              </div>
-            </NuxtLink>
-            <NuxtLink class="basis-1/2" to="/web-development/articles/tag/javascript">
-              <div class=" cursor-pointer transform duration-500 hover:shadow-md hover:-translate-y-1 flex  w-full ">
-                <img class="lg:w-40 h-auto" src="../../assets/img/javascript.png" alt="">
-                <div class="p-10 my-auto">
-                  <h1 class="text-2xl font-bold text-primary">
-                    <span class="text-secondary mr-1">#</span>JavaScript
-                  </h1>
-                  <p class="text-base text-gray-400 mt-2">
-                    Найпоширеніша на сьогодні мова програмування
-                  </p>
-                </div>
-              </div>
-            </NuxtLink>
-            <NuxtLink class="basis-1/2" to="/web-development/articles/tag/typescript">
-              <div class="cursor-pointer transform duration-500 hover:shadow-md hover:-translate-y-1 flex w-full ">
-                <img class="lg:w-40 h-auto" src="../../assets/img/typescript.png" alt="">
-                <div class="p-10 my-auto">
-                  <h1 class="text-2xl font-bold text-primary">
-                    <span class="text-secondary mr-1">#</span>TypeScript
-                  </h1>
-                  <p class="text-base text-gray-400 mt-2">
-                    Суперсет для джаваскріпта
-                  </p>
-                </div>
-              </div>
-            </NuxtLink>
-            <NuxtLink class="basis-1/2" to="/web-development/articles/tag/vuejs">
-              <div class="cursor-pointer transform duration-500 hover:shadow-md hover:-translate-y-1 flex w-full ">
-                <img class="lg:w-40 h-auto" src="../../assets/img/vue.png" alt="">
-                <div class="p-10 my-auto">
-                  <h1 class="text-2xl font-bold text-primary">
-                    <span class="text-secondary mr-1">#</span>VueJS
-                  </h1>
-                  <p class="text-base text-gray-400 mt-2">
-                    Фреймворк з простотою та чудовою документацією
-                  </p>
-                </div>
-              </div>
-            </NuxtLink>
+      <div class="flex justify-between flex-wrap mt-12">
+        <NuxtLink class="w-full lg:w-1/2" to="/web-development/articles">
+          <div class="flex cursor-pointer items-center transform duration-500 hover:shadow-md hover:-translate-y-1">
+            <img class="w-32 h-full" src="../../assets/img/articles.png" alt="">
+            <div class="p-10 my-auto">
+              <h1 class="text-2xl font-bold text-primary">
+                Усі статті з Веб-розробки
+              </h1>
+              <p class="text-base text-gray-400 mt-2">
+                Найпоширеніша на сьогодні мова програмування
+              </p>
+            </div>
           </div>
-        </div>
+          <div class="flex"></div>
+        </NuxtLink>
+        <NuxtLink class="w-full lg:w-1/2" to="/web-development/articles/tag/javascript">
+          <div class="flex cursor-pointer items-center transform duration-500 hover:shadow-md hover:-translate-y-1">
+            <img class="w-32 h-full" src="../../assets/img/javascript.png" alt="">
+            <div class="p-10 my-auto">
+              <h1 class="text-2xl font-bold text-primary">
+                <span class="text-secondary mr-1">#</span>JavaScript
+              </h1>
+              <p class="text-base text-gray-400 mt-2">
+                Найпоширеніша на сьогодні мова програмування
+              </p>
+            </div>
+          </div>
+          <div class="flex"></div>
+        </NuxtLink>
+        <NuxtLink class="w-full lg:w-1/2" to="/web-development/articles/tag/typescript">
+          <div class="flex cursor-pointer items-center transform duration-500 hover:shadow-md hover:-translate-y-1">
+            <img class="w-32 h-full" src="../../assets/img/typescript.png" alt="">
+            <div class="p-10 my-auto">
+              <h1 class="text-2xl font-bold text-primary">
+                <span class="text-secondary mr-1">#</span>Typescript
+              </h1>
+              <p class="text-base text-gray-400 mt-2">
+                Суперсет для джаваскріпта
+              </p>
+            </div>
+          </div>
+          <div class="flex"></div>
+        </NuxtLink>
+        <NuxtLink class="w-full lg:w-1/2" to="/web-development/articles/tag/vuejs">
+          <div class="flex cursor-pointer items-center transform duration-500 hover:shadow-md hover:-translate-y-1">
+            <img class="w-32 h-full" src="../../assets/img/vue.png" alt="">
+            <div class="p-10 my-auto">
+              <h1 class="text-2xl font-bold text-primary">
+                <span class="text-secondary mr-1">#</span>VueJS
+              </h1>
+              <p class="text-base text-gray-400 mt-2">
+                Фреймворк з простотою та чудовою документацією
+              </p>
+            </div>
+          </div>
+          <div class="flex"></div>
+        </NuxtLink>
       </div>
     </div>
   </div>

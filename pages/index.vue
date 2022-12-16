@@ -25,7 +25,7 @@ const lastWebDevelopmentArticles = await queryContent('web-development', 'articl
 <template>
   <div>
     <NuxtLayout name="default">
-      <div class="px-3 lg:px-0">
+      <div class="px-3 md:px-6 xl:px-0">
         <div class="flex w-full flex-row flex-wrap lg:px-0">
           <div class="lg:basis-2/5 basis-full flex flex-col">
             <ArticleCard
@@ -39,7 +39,7 @@ const lastWebDevelopmentArticles = await queryContent('web-development', 'articl
           </div>
           <div class="lg:basis-3/5 basis-full rounded-lg flex flex-col items-center lg:pl-8">
             <div class="flex flex-wrap w-full">
-              <div v-for="article in lastArticlesWithoutFirstOne" :key="article.title" class="flex flex-col basis-full lg:basis-1/2 mb-0 pt-6 lg:mb-6 lg:pt-0 lg:pr-4">
+              <div v-for="article in lastArticlesWithoutFirstOne" :key="article.title" class="flex flex-col basis-full lg:basis-1/2 mb-0 pt-6 lg:mb-6 lg:pt-0 lg:pl-4">
                 <ArticleCard
                   :title="article.title"
                   :content="article.description"

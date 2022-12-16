@@ -8,7 +8,7 @@ if (!articles.length) {
 </script>
 
 <template>
-  <div class="mx-3 mb-6 lg:mb-0 lg:mx-0">
+  <div class="mb-6 lg:mb-0 px-3 md:px-6 xl:px-0">
     <nav class="flex mb-4" aria-label="Breadcrumb">
       <ol class="inline-flex items-center space-x-1 md:space-x-3">
         <li class="inline-flex items-center">
