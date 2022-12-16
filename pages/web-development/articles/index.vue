@@ -1,7 +1,5 @@
 <script setup>
-const route = useRoute()
 const articles = await queryContent('web-development', 'articles').where({ category: { $eq: 'Веб-розробка' } }).find()
-console.log(articles)
 if (!articles.length) {
   throw createError({ statusCode: 404, statusMessage: 'Page Not Found', fatal: true })
 }
@@ -31,17 +29,19 @@ if (!articles.length) {
         </li>
       </ol>
     </nav>
-    <ContentDoc />
-    <div class="flex flex-wrap w-full lg:mt-8">
-      <div v-for="article in articles" :key="article.title" class="flex flex-col basis-full lg:basis-1/3 mb-0 pt-6 lg:mb-6 lg:pt-0 lg:pr-8">
-        <ArticleCard
-          :title="article.title"
-          :content="article.description"
-          :date-published="article.datePublishedFormatted"
-          :category="article.category"
-          :path="article._path"
-        />
-      </div>
-    </div>
+    <main>
+      <ContentDoc />
+      <section class="flex flex-wrap w-full lg:mt-8">
+        <div v-for="article in articles" :key="article.title" class="flex flex-col basis-full lg:basis-1/3 mb-0 pt-6 lg:mb-6 lg:pt-0 lg:pr-8">
+          <ArticleCard
+            :title="article.title"
+            :content="article.description"
+            :date-published="article.datePublishedFormatted"
+            :category="article.category"
+            :path="article._path"
+          />
+        </div>
+      </section>
+    </main>
   </div>
 </template>

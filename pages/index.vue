@@ -20,9 +20,9 @@ const lastWebDevelopmentArticles = await queryContent('web-development', 'articl
 </script>
 
 <template>
-  <div>
+  <main>
     <div class="px-3 md:px-6 xl:px-0">
-      <div class="flex w-full flex-row flex-wrap lg:px-0">
+      <section class="flex w-full flex-row flex-wrap lg:px-0">
         <div class="lg:basis-2/5 basis-full flex flex-col">
           <ArticleCard
             :title="lastArticles[0].title"
@@ -35,7 +35,7 @@ const lastWebDevelopmentArticles = await queryContent('web-development', 'articl
         </div>
         <div class="lg:basis-3/5 basis-full rounded-lg flex flex-col items-center lg:pl-8">
           <div class="flex flex-wrap w-full">
-            <div v-for="article in lastArticlesWithoutFirstOne" :key="article.title" class="flex flex-col basis-full lg:basis-1/2 mb-0 pt-6 lg:mb-6 lg:pt-0 lg:pl-4">
+            <article v-for="article in lastArticlesWithoutFirstOne" :key="article.title" class="flex flex-col basis-full lg:basis-1/2 mb-0 pt-6 lg:mb-6 lg:pt-0 lg:pl-4">
               <ArticleCard
                 :title="article.title"
                 :content="article.description"
@@ -43,12 +43,12 @@ const lastWebDevelopmentArticles = await queryContent('web-development', 'articl
                 :category="article.category"
                 :path="article._path"
               />
-            </div>
+            </article>
           </div>
         </div>
-      </div>
+      </section>
       <hr class="my-8 w-full h-px bg-gray-200 border-0">
-      <div class="flex w-full flex-col mb-20">
+      <section class="flex w-full flex-col mb-20">
         <div class="flex flex-col">
           <h2 class="text-2xl uppercase text-secondary font-extrabold lg:mb-6">
             Веб-розробка
@@ -75,8 +75,8 @@ const lastWebDevelopmentArticles = await queryContent('web-development', 'articl
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
     <ContentDoc v-if="false" />
-  </div>
+  </main>
 </template>

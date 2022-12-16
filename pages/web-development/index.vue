@@ -19,66 +19,63 @@
           </li>
         </ol>
       </nav>
-
-      <ContentDoc />
-      <div class="flex justify-between flex-wrap mt-12">
-        <NuxtLink class="w-full lg:w-1/2" to="/web-development/articles">
-          <div class="flex cursor-pointer items-center transform duration-500 hover:shadow-md hover:-translate-y-1">
-            <img class="w-32 h-full" src="../../assets/img/articles.png" alt="">
-            <div class="p-10 my-auto">
-              <h1 class="text-2xl font-bold text-primary">
-                Усі статті з Веб-розробки
-              </h1>
-              <p class="text-base text-gray-400 mt-2">
-                Найпоширеніша на сьогодні мова програмування
-              </p>
-            </div>
-          </div>
-          <div class="flex"></div>
-        </NuxtLink>
-        <NuxtLink class="w-full lg:w-1/2" to="/web-development/articles/tag/javascript">
-          <div class="flex cursor-pointer items-center transform duration-500 hover:shadow-md hover:-translate-y-1">
-            <img class="w-32 h-full" src="../../assets/img/javascript.png" alt="">
-            <div class="p-10 my-auto">
-              <h1 class="text-2xl font-bold text-primary">
-                <span class="text-secondary mr-1">#</span>JavaScript
-              </h1>
-              <p class="text-base text-gray-400 mt-2">
-                Найпоширеніша на сьогодні мова програмування
-              </p>
-            </div>
-          </div>
-          <div class="flex"></div>
-        </NuxtLink>
-        <NuxtLink class="w-full lg:w-1/2" to="/web-development/articles/tag/typescript">
-          <div class="flex cursor-pointer items-center transform duration-500 hover:shadow-md hover:-translate-y-1">
-            <img class="w-32 h-full" src="../../assets/img/typescript.png" alt="">
-            <div class="p-10 my-auto">
-              <h1 class="text-2xl font-bold text-primary">
-                <span class="text-secondary mr-1">#</span>Typescript
-              </h1>
-              <p class="text-base text-gray-400 mt-2">
-                Суперсет для джаваскріпта
-              </p>
-            </div>
-          </div>
-          <div class="flex"></div>
-        </NuxtLink>
-        <NuxtLink class="w-full lg:w-1/2" to="/web-development/articles/tag/vuejs">
-          <div class="flex cursor-pointer items-center transform duration-500 hover:shadow-md hover:-translate-y-1">
-            <img class="w-32 h-full" src="../../assets/img/vue.png" alt="">
-            <div class="p-10 my-auto">
-              <h1 class="text-2xl font-bold text-primary">
-                <span class="text-secondary mr-1">#</span>VueJS
-              </h1>
-              <p class="text-base text-gray-400 mt-2">
-                Фреймворк з простотою та чудовою документацією
-              </p>
-            </div>
-          </div>
-          <div class="flex"></div>
-        </NuxtLink>
-      </div>
+      <main>
+        <ContentDoc />
+        <section class="flex justify-between flex-wrap mt-12">
+          <NuxtLink class="w-full lg:w-1/2" to="/web-development/articles">
+            <article class="flex cursor-pointer items-center transform duration-500 hover:shadow-md hover:-translate-y-1">
+              <img class="w-32 h-full" src="../../assets/img/articles.png" alt="">
+              <div class="p-10 my-auto">
+                <h1 class="text-2xl font-bold text-primary">
+                  Усі статті з Веб-розробки
+                </h1>
+                <p class="text-base text-gray-400 mt-2">
+                  Найпоширеніша на сьогодні мова програмування
+                </p>
+              </div>
+            </article>
+          </NuxtLink>
+          <NuxtLink class="w-full lg:w-1/2" to="/web-development/articles/tag/javascript">
+            <article class="flex cursor-pointer items-center transform duration-500 hover:shadow-md hover:-translate-y-1">
+              <img class="w-32 h-full" src="../../assets/img/javascript.png" alt="">
+              <div class="p-10 my-auto">
+                <h1 class="text-2xl font-bold text-primary">
+                  <span class="text-secondary mr-1">#</span>JavaScript
+                </h1>
+                <p class="text-base text-gray-400 mt-2">
+                  Найпоширеніша на сьогодні мова програмування
+                </p>
+              </div>
+            </article>
+          </NuxtLink>
+          <NuxtLink class="w-full lg:w-1/2" to="/web-development/articles/tag/typescript">
+            <article class="flex cursor-pointer items-center transform duration-500 hover:shadow-md hover:-translate-y-1">
+              <img class="w-32 h-full" src="../../assets/img/typescript.png" alt="">
+              <div class="p-10 my-auto">
+                <h1 class="text-2xl font-bold text-primary">
+                  <span class="text-secondary mr-1">#</span>Typescript
+                </h1>
+                <p class="text-base text-gray-400 mt-2">
+                  Суперсет для джаваскріпта
+                </p>
+              </div>
+            </article>
+          </NuxtLink>
+          <NuxtLink class="w-full lg:w-1/2" to="/web-development/articles/tag/vuejs">
+            <article class="flex cursor-pointer items-center transform duration-500 hover:shadow-md hover:-translate-y-1">
+              <img class="w-32 h-full" src="../../assets/img/vue.png" alt="">
+              <div class="p-10 my-auto">
+                <h1 class="text-2xl font-bold text-primary">
+                  <span class="text-secondary mr-1">#</span>VueJS
+                </h1>
+                <p class="text-base text-gray-400 mt-2">
+                  Фреймворк з простотою та чудовою документацією
+                </p>
+              </div>
+            </article>
+          </NuxtLink>
+        </section>
+      </main>
     </div>
   </div>
 </template>
