@@ -46,6 +46,8 @@ if (!articles.length) {
             :date-published="article.datePublishedFormatted"
             :category="article.category"
             :path="article._path"
+            :image="article.image"
+            :imageAlt="article.imageAlt"
           />
         </div>
       </section>

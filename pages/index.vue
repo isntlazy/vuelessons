@@ -31,6 +31,8 @@ const lastWebDevelopmentArticles = await queryContent('web-development', 'articl
             :category="lastArticles[0].category"
             :is-main="!device.isMobile"
             :path="lastArticles[0]._path"
+            :image="lastArticles[0].image"
+            :imageAlt="lastArticles[0].imageAlt"
           />
         </div>
         <div class="lg:basis-3/5 basis-full rounded-lg flex flex-col items-center lg:pl-8">
@@ -42,6 +44,8 @@ const lastWebDevelopmentArticles = await queryContent('web-development', 'articl
                 :date-published="article.datePublishedFormatted"
                 :category="article.category"
                 :path="article._path"
+                :image="article.image"
+                :imageAlt="article.imageAlt"
               />
             </article>
           </div>
@@ -62,6 +66,8 @@ const lastWebDevelopmentArticles = await queryContent('web-development', 'articl
                   :date-published="article.datePublishedFormatted"
                   :category="article.category"
                   :path="article._path"
+                  :image="article.image"
+                  :imageAlt="article.imageAlt"
                 />
               </div>
             </div>

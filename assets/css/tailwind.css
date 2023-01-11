@@ -5,3 +5,15 @@
 .btn {
     @apply p-4;
 }
+
+.content h2 {
+    @apply text-primary;
+    @apply text-xl;
+    @apply font-bold;
+}
+
+.content h3 {
+    @apply text-primary;
+    @apply text-lg;
+    @apply font-semibold;
+}

@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  // extends: '@nuxt-themes/typography',
   // ssr: false,
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
@@ -13,6 +14,13 @@ export default defineNuxtConfig({
     dirs: ['stores']
   },
   css: ['@/assets/css/main.scss'],
+  // app: {
+  //   head: {
+  //     script: [
+  //       { src: ''}
+  //     ]
+  //   }
+  // },
   content: {
     highlight: {
       // Theme used in all color schemes.

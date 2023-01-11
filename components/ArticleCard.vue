@@ -5,7 +5,9 @@ export interface Props {
   title: string,
   content? :string,
   category?: string,
-  path: string
+  path: string,
+  image: string,
+  imageAlt: string,
 }
 const props = withDefaults(
   defineProps<Props>(), {
@@ -13,7 +15,9 @@ const props = withDefaults(
     datePublished: '',
     title: '',
     content: '',
-    category: ''
+    category: '',
+    image: '',
+    imageAlt: ''
   }
 )
 
@@ -27,7 +31,12 @@ const slicedContent = computed(() => {
 <template>
   <NuxtLink :to="path">
     <article>
-      <div :class="isMain ? 'h-72': 'h-44'" class="bg-cover w-full rounded-t-lg bg-[url('https://images.unsplash.com/photo-1664575602276-acd073f104c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80')]" />
+      <div class="bg-cover w-full rounded-t-lg overflow-hidden" :class="isMain ? 'h-72': 'h-44'">
+        <img
+          :src="`/images/articles/thumbnails/${image}`"
+          :alt="imageAlt"
+        >
+      </div>
       <div class="flex flex-col w-full">
         <div :class="isMain ? 'mt-4 mb-2 text-sm' : 'mt-2 mb-1 text-xs'" class="flex justify-between">
           <div class="uppercase font-extrabold text-secondary">
