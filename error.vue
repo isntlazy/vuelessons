@@ -10,7 +10,7 @@
         <img class="w-48" src="./assets/img/page-not-found.png" alt="Іконка помилки 404">
         <button type="button" class="flex flex-col my-12 items-center" @click="redirectToHome">
           <span class="mb-1 text-center uppercase font-bold text-primary">Повернутись на головну</span>
-          <img class="w-16 mt-4" src="./assets/img/arrow-right.svg" alt="Стрілка перейти на головну">
+          <img class="w-16 mt-4" src="assets/icons/arrow-right.svg" alt="Стрілка перейти на головну">
         </button>
       </div>
     </main>
