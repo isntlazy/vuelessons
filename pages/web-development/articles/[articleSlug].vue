@@ -52,8 +52,13 @@ const otherArticles = await queryContent('web-development', 'articles')
       <div class="flex w-full flex-col lg:flex-row">
         <main class="basis-3/4 flex flex-col lg:pr-16 content">
           <article>
-            <div class="bg-cover mb-6 h-72 w-full rounded-t-lg bg-[url('https://images.unsplash.com/photo-1664575602276-acd073f104c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80')]" />
-            <ContentDoc />
+            <div class="bg-cover mb-6 h-72 w-full rounded-t-lg overflow-hidden">
+              <img
+                :src="`/images/articles/thumbnails/${articles[0].image}`"
+                :alt="articles[0].imageAlt"
+              >
+            </div>
+            <ContentDoc class="content" />
           </article>
         </main>
         <aside class="basis-1/4 flex flex-col">
@@ -66,6 +71,8 @@ const otherArticles = await queryContent('web-development', 'articles')
             :date-published="article.datePublishedFormatted"
             :category="article.category"
             :path="article._path"
+            :image="article.image"
+            :imageAlt="article.imageAlt"
           />
         </aside>
       </div>
