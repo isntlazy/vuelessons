@@ -3,8 +3,8 @@ image: 'async-defer.jpg'
 imageAlt: 'Async Defer'
 tags: '#javascript'
 category: 'Веб-розробка'
-datePublished: '2022-11-21'
-datePublishedFormatted: '21 грудня 2022'
+datePublished: '2023-12-01'
+datePublishedFormatted: '12 січня 2023'
 ---
 
 # Ефективне завантаження JavaScript. Атрибути defer та async

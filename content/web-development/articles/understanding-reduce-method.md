@@ -3,8 +3,8 @@ image: 'reduce.jpg'
 imageAlt: 'reduce'
 tags: '#javascript'
 category: 'Веб-розробка'
-datePublished: '2022-11-03'
-datePublishedFormatted: '3 березня 2022'
+datePublished: '2023-09-01'
+datePublishedFormatted: '9 січня 2023'
 ---
 
 # Розбираємось із методом reduce та коли його варто використовувати

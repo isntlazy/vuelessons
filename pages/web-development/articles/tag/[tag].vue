@@ -1,6 +1,9 @@
 <script setup>
 const route = useRoute()
-const articles = await queryContent('web-development', 'articles').where({ tags: { $containsAny: [`#${route.params.tag}`] } }).find()
+const articles = await queryContent('web-development', 'articles')
+  .where({ tags: { $containsAny: [`#${route.params.tag}`] } })
+  .sort({ datePublished: -1 })
+  .find()
 if (!articles.length) {
   throw createError({ statusCode: 404, statusMessage: 'Page Not Found', fatal: true })
 }
@@ -47,7 +50,7 @@ if (!articles.length) {
             :category="article.category"
             :path="article._path"
             :image="article.image"
-            :imageAlt="article.imageAlt"
+            :image-alt="article.imageAlt"
           />
         </div>
       </section>

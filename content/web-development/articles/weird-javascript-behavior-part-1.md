@@ -3,8 +3,8 @@ image: 'weird-javascript-1.jpg'
 imageAlt: 'Async Defer'
 tags: '#javascript'
 category: 'Веб-розробка'
-datePublished: '2022-11-03'
-datePublishedFormatted: '3 березня 2022'
+datePublished: '2023-08-01'
+datePublishedFormatted: '8 січня 2023'
 ---
 
 # Дивна поведінка JavaScript. Частина&nbsp;1

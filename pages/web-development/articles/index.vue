@@ -1,5 +1,8 @@
 <script setup>
-const articles = await queryContent('web-development', 'articles').where({ category: { $eq: 'Веб-розробка' } }).find()
+const articles = await queryContent('web-development', 'articles')
+  .where({ category: { $eq: 'Веб-розробка' } })
+  .sort({ datePublished: -1 })
+  .find()
 if (!articles.length) {
   throw createError({ statusCode: 404, statusMessage: 'Page Not Found', fatal: true })
 }
@@ -40,7 +43,7 @@ if (!articles.length) {
             :category="article.category"
             :path="article._path"
             :image="article.image"
-            :imageAlt="article.imageAlt"
+            :image-alt="article.imageAlt"
           />
         </div>
       </section>

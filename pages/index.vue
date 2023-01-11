@@ -5,6 +5,7 @@ const numberOfLastArticles = { desktop: 5, mobile: 3 }
 const lastArticles = ref<any>([])
 lastArticles.value = await queryContent('').where({ category: { $containsAny: ['Веб-розробка', 'Продуктивність'] } })
   .limit(device.isMobile ? numberOfLastArticles.mobile : numberOfLastArticles.desktop)
+  .sort({ datePublished: -1 })
   .find()
 
 const lastArticlesWithoutFirstOne = computed(() => {
@@ -16,6 +17,7 @@ const lastArticlesWithoutFirstOne = computed(() => {
 const lastWebDevelopmentArticles = await queryContent('web-development', 'articles')
   .where({ category: { $containsAny: ['Веб-розробка', 'Продуктивність'] } })
   .limit(3)
+  .sort({ datePublished: -1 })
   .find()
 </script>
 

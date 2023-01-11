@@ -3,8 +3,8 @@ image: 'symbol.jpg'
 imageAlt: 'Symbol'
 tags: '#javascript'
 category: 'Веб-розробка'
-datePublished: '2022-11-03'
-datePublishedFormatted: '3 березня 2022'
+datePublished: '2023-11-01'
+datePublishedFormatted: '11 січня 2023'
 ---
 
 # Тип даних Symbol у Javascript
