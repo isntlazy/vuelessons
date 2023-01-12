@@ -30,7 +30,7 @@
                   Усі статті з Веб-розробки
                 </h1>
                 <p class="text-base text-gray-400 mt-2">
-                  Найпоширеніша на сьогодні мова програмування
+                  Переглянути усі статті в одному місці
                 </p>
               </div>
             </article>
@@ -56,7 +56,7 @@
                   <span class="text-secondary mr-1">#</span>Typescript
                 </h1>
                 <p class="text-base text-gray-400 mt-2">
-                  Суперсет для джаваскріпта
+                  Javascript з динамічною типізацією, інтерфейсами та іншими "супер-силами"
                 </p>
               </div>
             </article>
@@ -69,7 +69,7 @@
                   <span class="text-secondary mr-1">#</span>VueJS
                 </h1>
                 <p class="text-base text-gray-400 mt-2">
-                  Фреймворк з простотою та чудовою документацією
+                  Фреймворк з чудовою документацією та сучасними підходами до розробки
                 </p>
               </div>
             </article>
