@@ -18,6 +18,9 @@
 </template>
 
 <script setup>
+useHead({
+  title: '404 Сторінку не знайдено',
+})
 const props = defineProps({
   error: Object
 })

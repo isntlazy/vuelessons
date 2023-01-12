@@ -1,3 +1,8 @@
+<script setup>
+useHead({
+  title: 'Контакти'
+})
+</script>
 <template>
   <div class="flex flex-col px-3 md:px-6 xl:px-0">
     <nav class="flex mb-4" aria-label="Breadcrumb">

@@ -1,4 +1,13 @@
 <script lang="ts" setup>
+
+useHead({
+  titleTemplate: '',
+  title: 'Ранкова Кава. Блог про веб-розробку, javascript, typescript, vue.js українською',
+  meta: [
+    { name: 'description', content: 'Блог про веб-розробку, javascript, typescript, vue.js українською' }
+  ]
+})
+
 const device = useDevice()
 const numberOfLastArticles = { desktop: 5, mobile: 3 }
 

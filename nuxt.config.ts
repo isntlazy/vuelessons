@@ -14,6 +14,17 @@ export default defineNuxtConfig({
     dirs: ['stores']
   },
   css: ['@/assets/css/main.scss'],
+  app: {
+    head: {
+      titleTemplate: '%s - Ранкова Кава',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { key: 'description', name: 'description', content: 'Блог про веб-розробку, javascript, typescript, vue.js українською' }
+      ],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    }
+  },
   // app: {
   //   head: {
   //     script: [
