@@ -22,7 +22,16 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { key: 'description', name: 'description', content: 'Блог про веб-розробку, javascript, typescript, vue.js українською' }
       ],
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+      script: [{ src: 'https://www.googletagmanager.com/gtag/js?id=G-KQVX1M1MP8', async: true },
+        {
+          children: `window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                  
+                    gtag('config', 'G-KQVX1M1MP8');`
+        }
+      ]
     }
   },
   // app: {
