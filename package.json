@@ -31,7 +31,8 @@
     "lint-staged": "^13.0.3",
     "msw": "^0.49.0",
     "nuxt": "3.0.0",
-    "sitemap": "^7.1.1"
+    "sitemap": "^7.1.1",
+    "vue-gtag-next": "^1.14.0"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.6",
