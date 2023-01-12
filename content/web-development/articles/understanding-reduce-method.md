@@ -110,7 +110,7 @@ console.log(resultString)
 це робити вже з другого і до кінця. В другому випадку початковим значенням `accumulator` є передане нами `initialValue`, а саме пустий рядок.
 
 <span class="inline-flex mb-6 font-medium">
-<img class="w-6 h-6 mr-2" src="/_nuxt/assets/icons/info.svg"/>Порада: з власного досвіду рекомендую завжди вказувати initialValue, це робить код зрозумілішим та менша ймовірність можливих логічних помилок
+<img class="w-6 h-6 mr-2" src="/images/icons/info.svg"/>Порада: з власного досвіду рекомендую завжди вказувати initialValue, це робить код зрозумілішим та менша ймовірність можливих логічних помилок
 </span>
 
 ## Знаходимо середнє арифметичне з допомогою методу reduce
@@ -137,7 +137,7 @@ console.log(average)
 Якщо вас дивує, чому ми отримали `26.820000000000004` замість `26.82` рекомендую вам прочитати цю статтю з блогу:
 <a target="_blank" class="inline-flex" href="#">
 <strong>Дивна поведінка JavaScript</strong>
-<img class="w-6 h-6" style="color: red" src="/_nuxt/assets/icons/external-link.svg"/>
+<img class="w-6 h-6" style="color: red" src="/images/icons/external-link.svg"/>
 </a>
 
 ## Складніший приклад використання reduce

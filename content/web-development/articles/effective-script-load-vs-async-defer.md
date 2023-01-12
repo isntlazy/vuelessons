@@ -75,15 +75,15 @@ datePublishedFormatted: '12 січня 2023'
 Переглянути сумісність в браузерах: 
 <a rel="nofollow" target="_blank" class="inline-flex mr-2" href="https://caniuse.com/script-async">
     <strong>async</strong>
-    <img class="w-6 h-6" src="/_nuxt/assets/icons/external-link.svg"/>
+    <img class="w-6 h-6" src="/images/icons/external-link.svg"/>
 </a>
 <a rel="nofollow" target="_blank" class="inline-flex" href="https://caniuse.com/script-defer">
     <strong>defer</strong>
-    <img class="w-6 h-6" style="color: red" src="/_nuxt/assets/icons/external-link.svg"/>
+    <img class="w-6 h-6" style="color: red" src="/images/icons/external-link.svg"/>
 </a>
 
 <span class="inline-flex mb-6 font-medium">
-<img class="w-6 h-6 mr-2" src="/_nuxt/assets/icons/info.svg"/>Важливо! Ці атрибути працюють та мають сенс тільки коли ваш <code>&lt;script&gt;</code> знаходиться всередині тега &lt;head&gt;
+<img class="w-6 h-6 mr-2" src="/images/icons/info.svg"/>Важливо! Ці атрибути працюють та мають сенс тільки коли ваш <code>&lt;script&gt;</code> знаходиться всередині тега &lt;head&gt;
 </span>
 
 
