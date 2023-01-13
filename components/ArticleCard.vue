@@ -33,6 +33,8 @@ const slicedContent = computed(() => {
     <article>
       <div class="bg-cover w-full rounded-t-lg overflow-hidden" :class="isMain ? 'h-72': 'h-44'">
         <img
+          width="2340"
+          height="1560"
           :src="`/images/articles/thumbnails/${image}`"
           :alt="imageAlt"
         />
