@@ -4,7 +4,7 @@
       <div class="flex flex-col lg:flex-row w-full lg:items-center justify-between">
         <div class="mt-4 ml-6 lg:ml-0 lg:mt-0 mb-6">
           <a href="/" class="flex">
-            <img src="../assets/img/logo.svg" class="h-12 lg:h-14 mr-3" alt="Rankova Kava Logo">
+            <img width="177" height="71" src="../assets/img/logo.svg" class="h-12 lg:h-14 mr-3" alt="Rankova Kava Logo">
           </a>
         </div>
         <div class="flex flex-col ml-6">

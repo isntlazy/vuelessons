@@ -86,7 +86,7 @@ const lastWebDevelopmentArticles = await queryContent('web-development', 'articl
               <NuxtLink to="/web-development/articles">
                 <div class="flex flex-col items-center">
                   <span class="mb-1 text-center">Переглянути усі</span>
-                  <img class="w-1/3" src="../assets/icons/arrow-right.svg" alt="Стрілка подивитись усі">
+                  <img width="41" height="16" class="w-1/3" src="../assets/icons/arrow-right.svg" alt="Стрілка подивитись усі">
                 </div>
               </NuxtLink>
             </div>

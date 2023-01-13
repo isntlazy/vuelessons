@@ -31,7 +31,7 @@ const toggleMobileMenu = () => {
     <nav class="bg-primary border-gray-200 px-2 sm:px-4 py-6">
       <div class="container max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
         <a href="/" class="flex items-center -mt-4">
-          <img src="../assets/img/logo.svg" class="ml-3 mr-3 h-14 lg:h-16 lg:ml-0" alt="Rankova Kava Logo">
+          <img width="177" height="71" src="../assets/img/logo.svg" class="ml-3 mr-3 h-14 lg:h-16 lg:ml-0" alt="Rankova Kava Logo">
         </a>
         <button
           data-collapse-toggle="navbar-default"

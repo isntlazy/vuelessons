@@ -31,7 +31,7 @@ const slicedContent = computed(() => {
 <template>
   <NuxtLink :to="path">
     <article>
-      <div class="bg-cover w-full rounded-t-lg overflow-hidden" :class="isMain ? 'h-72': 'h-44'">
+      <div class="bg-cover w-full rounded-t-lg overflow-hidden" :class="isMain ? 'h-72': 'h-48'">
         <img
           width="2340"
           height="1560"
