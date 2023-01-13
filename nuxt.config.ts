@@ -48,6 +48,7 @@ export default defineNuxtConfig({
     }
   },
   image: {
+    domains: ['rankovakava.com'],
     dir: 'static'
   },
   modules: [
