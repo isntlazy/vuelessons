@@ -48,7 +48,7 @@ export default defineNuxtConfig({
     }
   },
   image: {
-    dir: 'public'
+    dir: 'static'
   },
   modules: [
     '@nuxt/image-edge',
