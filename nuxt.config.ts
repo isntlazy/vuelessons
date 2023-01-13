@@ -48,7 +48,7 @@ export default defineNuxtConfig({
     }
   },
   image: {
-    provider: 'ipx',
+    provider: 'static',
     dir: 'static'
     // staticFilename: '[publicPath]/images/[name]-[hash][ext]'
   },
