@@ -16,6 +16,9 @@ export default defineNuxtConfig({
   css: ['@/assets/css/main.scss'],
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'uk'
+      },
       titleTemplate: '%s - Ранкова Кава',
       meta: [
         { charset: 'utf-8' },
