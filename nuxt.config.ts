@@ -48,8 +48,8 @@ export default defineNuxtConfig({
     }
   },
   image: {
-    domains: ['rankovakava.com'],
-    dir: 'static'
+    dir: 'static',
+    staticFilename: '[publicPath]/images/[name]-[hash][ext]'
   },
   modules: [
     '@nuxt/image-edge',
