@@ -51,7 +51,10 @@ export default defineNuxtConfig({
       preload: ['diff', 'ts', 'js', 'css', 'sql', 'xml', 'json']
     }
   },
+  image: {
+  },
   modules: [
+    '@nuxt/image-edge',
     '@nuxtjs/tailwindcss',
     ['@pinia/nuxt',
       {
