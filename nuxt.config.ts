@@ -40,13 +40,6 @@ export default defineNuxtConfig({
       ]
     }
   },
-  // app: {
-  //   head: {
-  //     script: [
-  //       { src: ''}
-  //     ]
-  //   }
-  // },
   content: {
     highlight: {
       // Theme used in all color schemes.
