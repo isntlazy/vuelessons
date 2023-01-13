@@ -32,7 +32,7 @@ const slicedContent = computed(() => {
   <NuxtLink :to="path">
     <article>
       <div class="bg-cover w-full rounded-t-lg overflow-hidden" :class="isMain ? 'h-72': 'h-44'">
-        <nuxt-picture
+        <img
           :src="`/images/articles/thumbnails/${image}`"
           :alt="imageAlt"
         />

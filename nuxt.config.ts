@@ -47,11 +47,6 @@ export default defineNuxtConfig({
       preload: ['diff', 'ts', 'js', 'css', 'sql', 'xml', 'json']
     }
   },
-  image: {
-    provider: 'static',
-    dir: 'static'
-    // staticFilename: '[publicPath]/images/[name]-[hash][ext]'
-  },
   modules: [
     '@nuxt/image-edge',
     '@nuxtjs/tailwindcss',
