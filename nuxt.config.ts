@@ -1,7 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   nitro: {
-    preset: 'netlify'
+    preset: 'netlify',
+    prerender: {
+      routes: ['/sitemap.xml']
+    }
   },
   // extends: '@nuxt-themes/typography',
   // ssr: false,
